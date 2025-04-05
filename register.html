@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Hyderabad Marathon 2025</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <span>Hyderabad Marathon 2025</span>
+            </div>
+            <a href="index.html" class="register-btn">Back to Home</a>
+        </nav>
+    </header>
+
+    <section class="register-form-section">
+        <div class="container">
+            <h2>Register for the Marathon</h2>
+            <form id="registrationForm" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter your phone number (10 digits)">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="race">Select Race</label>
+                    <select id="race" name="race" required>
+                        <option value="full-marathon">Full Marathon (42.2 km)</option>
+                        <option value="half-marathon">Half Marathon (21.1 km)</option>
+                        <option value="10k-run">10K Run</option>
+                        <option value="5k-fun-run">5K Fun Run</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+                </div>
+
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hyderabad Marathon</p>
+        </div>
+    </footer>
+
+    <script src="js/register.js"></script>
+</body>
+</html>
